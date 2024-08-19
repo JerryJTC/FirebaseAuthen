@@ -34,25 +34,25 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="36dp"
-        android:layout_marginTop="62dp"
+        android:layout_marginTop="52dp"
         android:layout_marginEnd="311dp"
         android:text="Usuario"
         android:textSize="16sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="@+id/imageView"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
     <EditText
         android:id="@+id/editTextText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="213dp"
+        android:layout_height="55dp"
         android:layout_marginStart="28dp"
         android:layout_marginTop="36dp"
         android:ems="10"
+        android:hint="Ingrese su usuario"
         android:inputType="text"
-        android:text="Ingrese su usuario"
         app:layout_constraintEnd_toEndOf="@+id/imageView"
         app:layout_constraintHorizontal_bias="0.013"
         app:layout_constraintStart_toEndOf="@+id/textView2"
@@ -74,13 +74,13 @@
 
     <EditText
         android:id="@+id/editTextText2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="225dp"
+        android:layout_height="58dp"
         android:layout_marginStart="29dp"
         android:layout_marginTop="56dp"
         android:ems="10"
+        android:hint="Ingrese contraseña"
         android:inputType="text"
-        android:text="Ingrese contraseña"
         app:layout_constraintEnd_toEndOf="@+id/imageView"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/textView3"
@@ -99,50 +99,30 @@
 
     <Button
         android:id="@+id/button2"
-        android:layout_width="340dp"
-        android:layout_height="44dp"
+        android:layout_width="348dp"
+        android:layout_height="59dp"
         android:layout_marginTop="72dp"
         android:backgroundTint="#E41414"
         android:text="Gmail"
         app:icon="@drawable/common_google_signin_btn_text_dark_normal"
         app:iconTint="#F44336"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintHorizontal_bias="0.746"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button" />
 
     <Button
-        android:id="@+id/button3"
-        android:layout_width="340dp"
-        android:layout_height="44dp"
-        android:backgroundTint="#3F51B5"
-        android:text="Facebbok"
-        app:icon="@drawable/facebook"
-        app:iconTint="#273EB0"
-        app:layout_constraintEnd_toEndOf="@+id/button2"
-        app:layout_constraintStart_toStartOf="@+id/button2"
-        app:layout_constraintTop_toBottomOf="@+id/button2" />
-
-    <Button
         android:id="@+id/button4"
-        android:layout_width="340dp"
-        android:layout_height="44dp"
+        android:layout_width="347dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginBottom="16dp"
         android:backgroundTint="#090909"
         android:text="Github"
-        app:layout_constraintStart_toStartOf="@+id/button3"
-        app:layout_constraintTop_toBottomOf="@+id/button3" />
-
-    <Button
-        android:id="@+id/button5"
-        android:layout_width="340dp"
-        android:layout_height="44dp"
-        android:layout_marginTop="4dp"
-        android:backgroundTint="#666363"
-        android:text="SMS"
-        app:layout_constraintEnd_toEndOf="@+id/button4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/button4"
-        app:layout_constraintTop_toBottomOf="@+id/button4" />
+        app:layout_constraintStart_toStartOf="@+id/button2" />
 
     <TextView
         android:id="@+id/textView4"
@@ -156,5 +136,14 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button" />
+
+    <com.facebook.login.widget.LoginButton
+        android:id="@+id/login_button"
+        android:layout_width="349dp"
+        android:layout_height="59dp"
+        app:layout_constraintBottom_toTopOf="@+id/button4"
+        app:layout_constraintEnd_toEndOf="@+id/button2"
+        app:layout_constraintStart_toStartOf="@+id/button2"
+        app:layout_constraintTop_toBottomOf="@+id/button2" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
